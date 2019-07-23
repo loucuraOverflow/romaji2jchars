@@ -60,6 +60,6 @@ echo "watashi" | romaji2jchars
 Ou
 
 ```bash
-echo "ko-hi-" | romaji2jchars
+echo "ko-hi-" | romaji2jchars -k
 コーヒー # retorno
 ```
