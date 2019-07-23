@@ -134,7 +134,8 @@ std::unordered_map<std::string, std::pair<std::string, std::string>> characters_
 {"ppo", std::pair<std::string, std::string>("っぽ", "っぽ")},
 {"ppu", std::pair<std::string, std::string>("っぷ", "っぷ")},
 {"n", std::pair<std::string, std::string>("ん", "ン")},
-{"-", std::pair<std::string, std::string>("ー", "ー")}
+{"-", std::pair<std::string, std::string>("ー", "ー")},
+{",", std::pair<std::string, std::string>("、", "、")}
 };
 
 int main(int argc, char* argv[])
@@ -287,7 +288,8 @@ int main(int argc, char* argv[])
                         b("ppi") else
                         b("ppo") else
                         b("ppu") else
-			b("n")
+			b("n") else
+			b(",")
 
 		#undef b
 
